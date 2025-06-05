@@ -10,12 +10,15 @@ footer{
 #coderName{
   font-size: 16px;
   font-weight: 600;
+  text-decoration: none;
 }
 #gitHub{
   font-size: 16px;
   font-weight: 600;
+  text-decoration: none;
 }
 #netlify{
   font-size: 16px;
   font-weight: 600;
+  text-decoration: none;
 }
