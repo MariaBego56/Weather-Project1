@@ -4,22 +4,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="src/style.css">
 
-  <title>Weather Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+  <link rel="stylesheet" href="src/style.css" />
+
+  <title>Meteo-Weather</title>
 </head>
 
 <body>
-  <footer>
-    <p> Coded by <a id="coderName" href="https://www.technicalcommunicatormaria.co.uk/" target="_blank" rel="nooper">
-        Maria de
-        la Serna</a><span> on <a id="gitHub" href="https://github.com/MariaBego56/Weather-Project1" target="_blank"
-          rel="noopener">GitHub</a></span> and hosted in <a id="netlify"
-        href="https://weatherproject1-shecodes.netlify.app/" target="_blank" rel="nooper">Netlify.</a>
-    </p>
 
-  </footer>
+  <div class="weather-container">
+    <header>
+      <form id="search-form">
+        <input type="search" placeholder="enter a city" required class="search-input" />
+        <input type="submit" value="search" id="search-button" />
+      </form>
+    </header>
+    <hr>
+    <main class="weather-flex">
+      <div class="current-weather">
+        <h1 id="city-name">London</h1>
+        <p class="weather-conditions">
+          Sunday 20:10, moderate rain <br>
+          Humidity: <span id="humidity"> 87%,</span> Wind: <span id="wind-speed">7.2km/h</span>
+        </p>
+      </div>
 
+      <div class="weather-now">
+        <img id="weather-icon" src="" alt="Weather icon" />
+        <span id="weather-temperature-value">24 </span>
+        <span id="weather-temperature-units">°C </span>
+
+      </div>
+
+    </main>
+    <footer>
+      <hr>
+      coded by <a href="https://www.technicalcommunicatormaria.co.uk/" target="_blank" rel="noopener">Maria de la
+        Serna</a> it is open source <a href=" https://github.com/MariaBego56/Meteo-Weather" target="_blank"
+        rel="noopener">
+        on GitHub </a> and
+      hosted <a href="https://meteo-wheather.netlify.app/" target="_blank" rel="noopener"> by Netlify</a>
+    </footer>
+  </div>
+
+  <script src="src/index.js"></script>
 </body>
+
 
 </html>
